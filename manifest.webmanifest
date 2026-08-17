@@ -2,8 +2,17 @@
   "name": "Mi Agenda",
   "short_name": "Mi Agenda",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "background_color": "#f4f7f7",
-  "theme_color": "#0f766e",
-  "description": "Agenda financiera personal móvil"
+  "background_color": "#f3f7f6",
+  "theme_color": "#087f70",
+  "description": "Agenda personal y control financiero",
+  "icons": [
+    {
+      "src": "/icon-mi-agenda.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
