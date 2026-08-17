@@ -1,0 +1,67 @@
+/* Fix definitivo del drawer móvil: evita desplazamiento horizontal de la página y mantiene el menú pegado al borde izquierdo. */
+@media (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    touch-action: pan-y;
+  }
+
+  .app,
+  .main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  #sidebar {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: min(320px, 88vw);
+    max-width: 320px;
+    height: 100dvh;
+    margin: 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 180ms cubic-bezier(.22, .8, .24, 1);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    contain: layout paint;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+
+  #sidebar.open {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  #overlay {
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    touch-action: none;
+  }
+
+  .main {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    transform: none;
+  }
+}
