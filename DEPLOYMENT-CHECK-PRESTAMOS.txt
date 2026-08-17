@@ -1,0 +1,7 @@
+MI AGENDA — VERIFICACIÓN DE DESPLIEGUE
+
+Este archivo confirma un cambio nuevo en main para probar el flujo automático GitHub → Vercel.
+
+Módulo que debe estar visible en producción: PRÉSTAMOS.
+
+Fecha de prueba: 2026-08-17
