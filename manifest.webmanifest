@@ -1,0 +1,9 @@
+{
+  "name": "Mi Agenda",
+  "short_name": "Mi Agenda",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f7f7",
+  "theme_color": "#0f766e",
+  "description": "Agenda financiera personal móvil"
+}
